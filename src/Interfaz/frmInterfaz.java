@@ -4,11 +4,14 @@
  */
 package Interfaz;
 
+import controladores.Controlador;
+
 /**
  *
  * @author bryan
  */
 public class frmInterfaz extends javax.swing.JFrame {
+    private Controlador controlador;
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmInterfaz.class.getName());
 
@@ -59,12 +62,14 @@ public class frmInterfaz extends javax.swing.JFrame {
 
         btn0.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn0.setText("0");
+        btn0.addActionListener(this::btn0ActionPerformed);
 
         btnResta.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnResta.setText("-");
 
         btn1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn1.setText("1");
+        btn1.addActionListener(this::btn1ActionPerformed);
 
         btn4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn4.setText("4");
@@ -84,12 +89,15 @@ public class frmInterfaz extends javax.swing.JFrame {
 
         btn8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn8.setText("8");
+        btn8.addActionListener(this::btn8ActionPerformed);
 
         btn2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn2.setText("2");
+        btn2.addActionListener(this::btn2ActionPerformed);
 
         btn3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn3.setText("3");
+        btn3.addActionListener(this::btn3ActionPerformed);
 
         btnMultiplicar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnMultiplicar.setText("*");
@@ -235,23 +243,23 @@ public class frmInterfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDividirActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        // TODO add your handling code here:
+        controlador.agregarNumero(7);
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        // TODO add your handling code here:
+       controlador.agregarNumero(4);
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        // TODO add your handling code here:
+        controlador.agregarNumero(5);
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        // TODO add your handling code here:
+        controlador.agregarNumero(9);
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        // TODO add your handling code here:
+        controlador.agregarNumero(6);
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
@@ -269,6 +277,26 @@ public class frmInterfaz extends javax.swing.JFrame {
     private void btnBorrarDigitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarDigitoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBorrarDigitoActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        controlador.agregarNumero(1);
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        controlador.agregarNumero(2);
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        controlador.agregarNumero(3);
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+       controlador.agregarNumero(8);
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        controlador.agregarNumero(0);
+    }//GEN-LAST:event_btn0ActionPerformed
 
     /**
      * @param args the command line arguments
