@@ -12,7 +12,7 @@ public class Calculadora {
         validarValores(num1,num2);
         return num1-num2;
     }
-    public double multiblicar(double num1, double num2)throws IlegalExcepcionValorInvalido{
+    public double multiplicar(double num1, double num2)throws IlegalExcepcionValorInvalido{
         validarValores(num1,num2);
         return num1*num2;
     }
