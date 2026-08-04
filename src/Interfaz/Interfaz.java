@@ -53,104 +53,174 @@ public class Interfaz extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 33, 391, 63));
-
         btn7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn7.setText("7");
         btn7.addActionListener(this::btn7ActionPerformed);
-        jPanel1.add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 215, 86, 51));
 
         btn0.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn0.setText("0");
-        jPanel1.add(btn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 422, 86, 51));
 
         btnResta.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnResta.setText("-");
-        jPanel1.add(btnResta, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 353, 86, 51));
 
         btn1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn1.setText("1");
-        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 353, 86, 51));
 
         btn4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn4.setText("4");
         btn4.addActionListener(this::btn4ActionPerformed);
-        jPanel1.add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 284, 86, 51));
 
         btn5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn5.setText("5");
         btn5.addActionListener(this::btn5ActionPerformed);
-        jPanel1.add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 284, 86, 51));
 
         btnDividir.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnDividir.setText("/");
         btnDividir.addActionListener(this::btnDividirActionPerformed);
-        jPanel1.add(btnDividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 215, 86, 51));
 
         btn9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn9.setText("9");
         btn9.addActionListener(this::btn9ActionPerformed);
-        jPanel1.add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 215, 86, 51));
 
         btn8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn8.setText("8");
-        jPanel1.add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 215, 86, 51));
 
         btn2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn2.setText("2");
-        jPanel1.add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 353, 86, 51));
 
         btn3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn3.setText("3");
-        jPanel1.add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 353, 86, 51));
 
         btnMultiplicar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnMultiplicar.setText("*");
-        jPanel1.add(btnMultiplicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 284, 86, 51));
 
         btn6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn6.setText("6");
         btn6.addActionListener(this::btn6ActionPerformed);
-        jPanel1.add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 284, 86, 51));
 
         btndecimal.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btndecimal.setText(",");
-        jPanel1.add(btndecimal, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 422, 86, 51));
 
         btnigual.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnigual.setText("=");
-        jPanel1.add(btnigual, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 422, 86, 51));
 
         btnSuma.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnSuma.setText("+");
-        jPanel1.add(btnSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 422, 86, 51));
 
         btnReiniciar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnReiniciar.setText("AC");
         btnReiniciar.addActionListener(this::btnReiniciarActionPerformed);
-        jPanel1.add(btnReiniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 131, 86, 51));
 
         btnNegativo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnNegativo.setText("-");
         btnNegativo.addActionListener(this::btnNegativoActionPerformed);
-        jPanel1.add(btnNegativo, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 131, 86, 51));
 
         btnBorrarPantalla.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnBorrarPantalla.setText("CE");
         btnBorrarPantalla.addActionListener(this::btnBorrarPantallaActionPerformed);
-        jPanel1.add(btnBorrarPantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 131, 86, 51));
 
         btnBorrarDigito.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnBorrarDigito.setText("<-");
         btnBorrarDigito.addActionListener(this::btnBorrarDigitoActionPerformed);
-        jPanel1.add(btnBorrarDigito, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 131, 86, 51));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(btnReiniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnBorrarPantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(btnBorrarDigito, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(17, 17, 17)
+                        .addComponent(btnNegativo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnDividir, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnMultiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnResta, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btndecimal, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(btnigual, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnReiniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBorrarPantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBorrarDigito, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnNegativo, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDividir, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnMultiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnResta, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btndecimal, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnigual, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
