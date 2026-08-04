@@ -8,14 +8,14 @@ package Interfaz;
  *
  * @author bryan
  */
-public class Interfaz extends javax.swing.JFrame {
+public class frmInterfaz extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Interfaz.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmInterfaz.class.getName());
 
     /**
      * Creates new form Interfaz
      */
-    public Interfaz() {
+    public frmInterfaz() {
         initComponents();
     }
 
@@ -292,7 +292,7 @@ public class Interfaz extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Interfaz().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frmInterfaz().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
