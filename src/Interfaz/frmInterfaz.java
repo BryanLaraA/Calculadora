@@ -287,7 +287,7 @@ public class frmInterfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     private void btnNegativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNegativoActionPerformed
-       controlador.cambiarSigno()
+       controlador.cambiarSigno();
     }//GEN-LAST:event_btnNegativoActionPerformed
 
     private void btnBorrarPantallaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarPantallaActionPerformed
