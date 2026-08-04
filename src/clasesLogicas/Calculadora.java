@@ -19,7 +19,7 @@ public class Calculadora {
     public double dividir(double num1, double num2)throws IlegalExcepcionValorInvalido, IlegalExcepcionDivisionCero{
         validarValores(num1,num2);
         if(num2==0){
-            throw new IlegalExcepcionDivisionCero();
+            throw new IlegalExcepcionDivisionCero("No se puede dividir por cero");
         }
         return num1/num2;
     }
