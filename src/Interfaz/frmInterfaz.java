@@ -20,6 +20,8 @@ public class frmInterfaz extends javax.swing.JFrame {
      */
     public frmInterfaz() {
         initComponents();
+        
+        
     }
 
     /**
@@ -120,7 +122,7 @@ public class frmInterfaz extends javax.swing.JFrame {
         btnReiniciar.addActionListener(this::btnReiniciarActionPerformed);
 
         btnNegativo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        btnNegativo.setText("-");
+        btnNegativo.setText(" -N");
         btnNegativo.addActionListener(this::btnNegativoActionPerformed);
 
         btnBorrarPantalla.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
