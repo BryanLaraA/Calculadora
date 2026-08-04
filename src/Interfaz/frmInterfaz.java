@@ -4,7 +4,9 @@
  */
 package Interfaz;
 
+import clasesLogicas.Calculadora;
 import controladores.Controlador;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -21,8 +23,19 @@ public class frmInterfaz extends javax.swing.JFrame {
     public frmInterfaz() {
         initComponents();
         
+         Calculadora calculadora = new Calculadora();
+         controlador = new Controlador(this, calculadora);
         
     }
+    
+    public void mostrarPantalla(String texto) {
+    txtPantalla.setText(texto);
+    }
+
+    public void mostrarError(String mensaje) {
+    JOptionPane.showMessageDialog(this, mensaje, "No se pudo completar la operacion", JOptionPane.WARNING_MESSAGE);
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -68,6 +81,7 @@ public class frmInterfaz extends javax.swing.JFrame {
 
         btnResta.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnResta.setText("-");
+        btnResta.addActionListener(this::btnRestaActionPerformed);
 
         btn1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn1.setText("1");
@@ -103,6 +117,7 @@ public class frmInterfaz extends javax.swing.JFrame {
 
         btnMultiplicar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnMultiplicar.setText("*");
+        btnMultiplicar.addActionListener(this::btnMultiplicarActionPerformed);
 
         btn6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btn6.setText("6");
@@ -110,12 +125,15 @@ public class frmInterfaz extends javax.swing.JFrame {
 
         btndecimal.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btndecimal.setText(",");
+        btndecimal.addActionListener(this::btndecimalActionPerformed);
 
         btnigual.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnigual.setText("=");
+        btnigual.addActionListener(this::btnigualActionPerformed);
 
         btnSuma.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnSuma.setText("+");
+        btnSuma.addActionListener(this::btnSumaActionPerformed);
 
         btnReiniciar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnReiniciar.setText("AC");
@@ -241,7 +259,7 @@ public class frmInterfaz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
-        // TODO add your handling code here:
+        controlador.seleccionarOperacion("/");
     }//GEN-LAST:event_btnDividirActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
@@ -265,19 +283,19 @@ public class frmInterfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
-        // TODO add your handling code here:
+         controlador.reiniciar();
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     private void btnNegativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNegativoActionPerformed
-        // TODO add your handling code here:
+       controlador.cambiarSigno()
     }//GEN-LAST:event_btnNegativoActionPerformed
 
     private void btnBorrarPantallaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarPantallaActionPerformed
-        // TODO add your handling code here:
+        controlador.limpiarPantalla();
     }//GEN-LAST:event_btnBorrarPantallaActionPerformed
 
     private void btnBorrarDigitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarDigitoActionPerformed
-        // TODO add your handling code here:
+        controlador.borrarUltimoCaracter();
     }//GEN-LAST:event_btnBorrarDigitoActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
@@ -299,6 +317,26 @@ public class frmInterfaz extends javax.swing.JFrame {
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
         controlador.agregarNumero(0);
     }//GEN-LAST:event_btn0ActionPerformed
+
+    private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
+        controlador.seleccionarOperacion("+");
+    }//GEN-LAST:event_btnSumaActionPerformed
+
+    private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
+        controlador.seleccionarOperacion("-");
+    }//GEN-LAST:event_btnRestaActionPerformed
+
+    private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
+         controlador.seleccionarOperacion("*");
+    }//GEN-LAST:event_btnMultiplicarActionPerformed
+
+    private void btndecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndecimalActionPerformed
+          controlador.agregarPunto();
+    }//GEN-LAST:event_btndecimalActionPerformed
+
+    private void btnigualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnigualActionPerformed
+         controlador.calcularResultado();
+    }//GEN-LAST:event_btnigualActionPerformed
 
     /**
      * @param args the command line arguments
