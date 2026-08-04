@@ -1,5 +1,7 @@
 package clasesLogicas;
 
+import excepciones.IlegalExcepcionValorInvalido;
+
 public class Calculadora {
     private double num1;
     private double num2;
@@ -46,6 +48,7 @@ public class Calculadora {
     }
     
     public double sumar(double num1, double num2){
+        
         return num1+num2;
     }
     public double restar(double num1, double num2){
@@ -57,6 +60,13 @@ public class Calculadora {
     public double dividir(double num1, double num2){
         return num1/num2;
     }
-    
+    public void validarValores(double num1, double num2)throws IlegalExcepcionValorInvalido{
+        if(Double.isNaN(num1)||Double.isNaN(num2)){
+            throw new IlegalExcepcionValorInvalido("Valor Invalido");
+        }
+        if(Double.isInfinite(num1)||Double.isInfinite(num2)){
+            throw new IlegalExcepcionValorInvalido("Valor Infinito");
+        }
+    }
     
 }
