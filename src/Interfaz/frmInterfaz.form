@@ -42,7 +42,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
-                          <Component id="jTextField1" min="-2" pref="391" max="-2" attributes="0"/>
+                          <Component id="txtPantalla" min="-2" pref="391" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
@@ -103,7 +103,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="33" pref="33" max="-2" attributes="0"/>
-                  <Component id="jTextField1" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="txtPantalla" min="-2" pref="63" max="-2" attributes="0"/>
                   <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnReiniciar" min="-2" pref="51" max="-2" attributes="0"/>
@@ -144,7 +144,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="txtPantalla">
         </Component>
         <Component class="javax.swing.JButton" name="btn7">
           <Properties>
